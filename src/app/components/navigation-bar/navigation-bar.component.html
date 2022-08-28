@@ -1,0 +1,81 @@
+<header class="p-3 text-bg-dark">
+  <div class="container">
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+      >
+        <i
+          class="fa-solid fa-heart fa-beat"
+          style="--fa-animation-duration: 2s"
+        ></i>
+      </a>
+
+      <ul
+        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+      >
+        <li>
+          <a [routerLink]="['/']" class="nav-link px-2 text-secondary">Home</a>
+        </li>
+        <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+        <li>
+          <a [routerLink]="['/cart']" class="nav-link px-2 text-white">Cart</a>
+        </li>
+        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input
+          type="search"
+          class="form-control form-control-dark text-bg-dark"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </form>
+
+      <div class="text-end">
+        <button
+          type="button"
+          [routerLink]="['/login']"
+          class="btn btn-outline-light me-2"
+        >
+          Login
+        </button>
+        <button
+          type="button"
+          [routerLink]="['/register']"
+          class="btn btn-warning"
+        >
+          Sign-up
+        </button>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-outline-light me-2 dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          style="padding: 1px"
+          aria-expanded="false"
+        >
+          <img
+            src="../../../assets/sash.jpg"
+            class="rounded-circle"
+            style="width: 50px"
+            alt="..."
+          />
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item active" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<router-outlet></router-outlet>
